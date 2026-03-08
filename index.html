@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Henry Daniel James">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Henry Daniel James course landing page showing information about me and my country.">
+        <title>WDD 131 - Dynamic Web Fundamentals - Henry Daniel James</title>
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Henry Daniel James</h1>
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="about-section">
+                    <p>
+                        My name is Henry Daniel James. I am a software engineering student who enjoys
+                        writing, programming, and designing digital experiences. I love learning new
+                        technologies and building useful projects that help solve real-world problems.
+                    </p>
+                    <img src="images/profile.png" alt="Photo of Henry Daniel James">
+                </div>
+
+            </section>
+
+            <section class="card">
+                <h2>Nigeria</h2>
+                <img src="images/nigeria.jpeg" alt="Scenery of Nigeria">
+                <p>
+                    Nigeria is a vibrant country in West Africa known for its diverse cultures,
+                    rich traditions, and energetic people. It is home to many languages, cuisines,
+                    and creative industries including music, film, and technology.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Henry Daniel James | Nigeria
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+
+    </body>
+</html>
