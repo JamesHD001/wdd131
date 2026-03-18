@@ -68,6 +68,10 @@ main h2 {
     padding-bottom: 30px;
 }
 
+figcaption {
+    text-align: center;
+}
+
 .temples {
     display: grid;
     grid-template-columns: 1fr;
