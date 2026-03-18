@@ -11,7 +11,7 @@ menuBtn.addEventListener("click", () => {
     navMenu.classList.toggle("open");
 
     if (navMenu.classList.contains("open")) {
-        menuBtn.textContent = "✖";
+        menuBtn.textContent = "X";
     } else {
         menuBtn.textContent = "☰";
     }
