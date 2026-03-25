@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Henry Daniel James">
+  <meta name="description" content="WDD 131 - My Country page showcasing culture, weather, and highlights.">
+  <title>WDD 131 - My Country</title>
+
+  <link rel="stylesheet" href="/styles/place.css">
+  <link rel="stylesheet" href="/styles/place-large.css">
+
+  <script src="/scripts/place.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Nigeria</h1>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <picture>
+        <source srcset="/images/nigeria.webp" media="(min-width: 600px)">
+        <img src="/images/nigeria.svg" alt="Scenic view of Nigeria">
+      </picture>
+    </section>
+
+    <!-- Weather -->
+    <section class="weather">
+      <h2>Weather</h2>
+      <p><strong>Temperature:</strong> <span id="temp"></span></p>
+      <p><strong>Conditions:</strong> <span id="conditions"></span></p>
+      <p><strong>Wind Speed:</strong> <span id="wind"></span></p>
+      <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+      <div class="weather-icon"></div>
+    </section>
+
+    <!-- Data -->
+    <section class="data">
+      <h2>Country Data</h2>
+      <p><strong>Area:</strong> 923,768 sq km</p>
+      <p><strong>Population:</strong> 223,804,632</p>
+      <p><strong>Capital:</strong> Abuja</p>
+      <p><strong>Languages:</strong> Yoruba, Igbo, Hausa, English, Pidgin(official)</p>
+      <p><strong>Currency:</strong> Nigerian Naira</p>
+      <p><strong>Time Zone:</strong> UTC+1</p>
+      <p><strong>Calling Code:</strong> +234</p>
+      <p><strong>Internet TLD:</strong> .ng</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>WDD 131 - Henry Daniel James</p>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
