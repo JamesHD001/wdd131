@@ -1,34 +1,39 @@
 @media (min-width: 768px) {
-    body {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-  
-    header h1 {
-      font-size: 2rem;
-    }
-  
-    .hero img {
-      margin: var(--spacing) auto;
-      display: block;
-      max-height: 400px;
-      object-fit: cover;
-    }
-  
-    main {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--spacing);
-      align-items: start;
-    }
-  
-    .weather, .data {
-      margin-bottom: 0;
-      padding: calc(var(--spacing) * 1.5);
-    }
-  
-    footer {
-      font-size: 1rem;
-    }
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
   }
-  
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .hero img {
+    margin: var(--spacing) auto;
+    display: block;
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing);
+    align-items: start;
+  }
+
+  .weather, .data {
+    margin-bottom: 0;
+    padding: calc(var(--spacing) * 1.5);
+  }
+
+  .weather::after {
+    content: " ☀️";
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}

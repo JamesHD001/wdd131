@@ -1,4 +1,3 @@
-// Footer year + last modified
 document.addEventListener("DOMContentLoaded", () => {
   const yearSpan = document.getElementById("year");
   const lastModifiedSpan = document.getElementById("lastModified");
@@ -9,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   lastModifiedSpan.textContent = document.lastModified;
 });
 
-// Wind Chill Calculation
 function calculateWindChill(tempC, windKmh) {
   return (
     13.12 +
