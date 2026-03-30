@@ -55,6 +55,8 @@ nav a {
 nav a:hover {
     background: black;
     border-radius: 50px;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 main {
