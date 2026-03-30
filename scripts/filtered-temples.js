@@ -109,6 +109,66 @@ const temples = [
       area: 10700,
       imageUrl:
       "https://churchofjesuschristtemples.org/assets/img/temples/adelaide-australia-temple/adelaide-australia-temple-4359-main.jpg"
+    },
+
+    {
+      templeName: "Salt Lake Temple",
+      location: "Salt Lake City, Utah United States",
+      dedicated: "1893, April,6-24 ",
+      area: 382207,
+      imageUrl: 
+      "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
     }
   ];
   
+  const container = document.getElementById("templeContainer");
+
+function displayTemples(templeList) {
+    container.innerHTML = "";
+
+    templeList.forEach(temple => {
+        const card = document.createElement("section");
+
+        card.innerHTML = `
+            <h3>${temple.templeName}</h3>
+            <p>${temple.location}</p>
+            <p>Dedicated: ${temple.dedicated}</p>
+            <p>Area: ${temple.area} sq ft</p>
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+        `;
+
+        container.appendChild(card);
+    });
+}
+
+document.getElementById("home").addEventListener("click", () => {
+  displayTemples(temples);
+});
+
+document.getElementById("old").addEventListener("click", () => {
+  const filtered = temples.filter(t => {
+      const year = parseInt(t.dedicated.split(",")[0]);
+      return year < 1900;
+  });
+  displayTemples(filtered);
+});
+
+document.getElementById("new").addEventListener("click", () => {
+  const filtered = temples.filter(t => {
+      const year = parseInt(t.dedicated.split(",")[0]);
+      return year > 2000;
+  });
+  displayTemples(filtered);
+});
+
+document.getElementById("large").addEventListener("click", () => {
+  const filtered = temples.filter(t => t.area > 90000);
+  displayTemples(filtered);
+});
+
+document.getElementById("small").addEventListener("click", () => {
+  const filtered = temples.filter(t => t.area < 10000);
+  displayTemples(filtered);
+});
+
+displayTemples(temples);

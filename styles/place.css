@@ -49,18 +49,14 @@ header h1 {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.weather h2 {
-  margin-bottom: 0.5rem;
-  color: var(--secondary-color);
-}
-
 .weather p {
   margin: 0.25rem 0;
 }
 
-.weather-icon img {
+.weather-icon {
+  content: url('/images/cloudy.svg');
   width: 40px;
-  height: 40px;
+  height: 40px; 
 }
 
 .data {

@@ -15,14 +15,31 @@
     object-fit: cover;
   }
 
+  section h2{
+    background-color: green;
+  }
   main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: var(--spacing);
     align-items: start;
   }
 
-  .weather, .data {
+  .weather {
+    position: absolute;
+    margin-bottom: 0;
+    padding: calc(var(--spacing) * 1.5);
+  }
+
+  .weather h2 {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+  }
+  
+  .weather-icon {
+    display: none;
+  }
+
+  .data {
     margin-bottom: 0;
     padding: calc(var(--spacing) * 1.5);
   }
