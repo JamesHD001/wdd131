@@ -1,0 +1,77 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0F172A;
+    color: #E2E8F0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #38BDF8;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #94A3B8;
+}
+
+/* Sections */
+section {
+    background-color: #1E293B;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Headings */
+h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+    color: #38BDF8;
+}
+
+h3 {
+    margin-top: 15px;
+    color: #E2E8F0;
+}
+
+/* Lists */
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #94A3B8;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    body {
+        max-width: 900px;
+        margin: auto;
+    }
+}
