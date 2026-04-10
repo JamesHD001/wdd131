@@ -1,0 +1,62 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f2f4f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #4b2aad;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+/* Layout */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+/* Card */
+main div {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* Text */
+main p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Counter highlight */
+#counter {
+    font-weight: bold;
+    color: #4b2aad;
+    font-size: 18px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background: #4b2aad;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+}

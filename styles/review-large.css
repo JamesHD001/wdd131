@@ -1,0 +1,25 @@
+@media screen and (min-width: 768px) {
+
+    main {
+        padding: 60px 20px;
+    }
+
+    main div {
+        max-width: 500px;
+        padding: 35px;
+        border-radius: 14px;
+    }
+
+    main p {
+        font-size: 18px;
+    }
+
+    #counter {
+        font-size: 22px;
+    }
+
+    header {
+        font-size: 20px;
+        padding: 30px;
+    }
+}

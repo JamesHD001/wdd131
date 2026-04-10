@@ -6,11 +6,13 @@
   <meta name="author" content="Henry Daniel James">
   <meta name="description" content="Review confirmation page">
   <title>Review Submitted</title>
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="./styles/review.css">
+  <link rel="stylesheet" href="./styles/review-large.css">
   <script defer src="./scripts/review.js"></script>
 </head>
 
@@ -20,8 +22,13 @@
   </header>
 
   <main>
-    <p>Your review has been submitted successfully.</p>
-    <p>Total Reviews Submitted: <span id="counter"></span></p>
+    <div>
+      <p>Your review has been submitted successfully.</p>
+      <p>Total Reviews Submitted: <span id="counter"></span></p>
+
+      <a href="form.html" class="back-btn">Submit Another Review</a>
+
+    </div>
   </main>
 </body>
 </html>
