@@ -72,22 +72,31 @@
 
       <fieldset>
         <legend>Useful Features</legend>
-
-        <span>Which features did you find useful in theis product?</span><br>
-        <span class="italics">(Check all that applies)</span><br>
-        <br>
-
-        <input type="checkbox" id="speed" name="features" value="speed">
-        <label for="speed">Speed</label>
-
-        <input type="checkbox" id="durability" name="features" value="durability">
-        <label for="durability">Durability</label>
-
-        <input type="checkbox" id="design" name="features" value="design">
-        <label for="design">Design</label>
-
-        <input type="checkbox" id="efficiency" name="features" value="efficiency">
-        <label for="efficiency">Efficiency</label>
+      
+        <p>Which features did you find useful in this product?</p>
+        <p class="italics">(Check all that apply)</p>
+      
+        <div class="checkbox-group">
+          <div class="checkbox-item">
+            <input type="checkbox" id="speed" name="features" value="speed">
+            <label for="speed">Speed</label>
+          </div>
+      
+          <div class="checkbox-item">
+            <input type="checkbox" id="durability" name="features" value="durability">
+            <label for="durability">Durability</label>
+          </div>
+      
+          <div class="checkbox-item">
+            <input type="checkbox" id="design" name="features" value="design">
+            <label for="design">Design</label>
+          </div>
+      
+          <div class="checkbox-item">
+            <input type="checkbox" id="efficiency" name="features" value="efficiency">
+            <label for="efficiency">Efficiency</label>
+          </div>
+        </div>
       </fieldset>
 
       <label for="review">Written Review <span class="optional">(optional)</span></label>

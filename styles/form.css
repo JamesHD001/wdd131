@@ -97,11 +97,31 @@ fieldset {
     cursor: pointer;
 }
 
-/* Features (checkbox layout) */
-fieldset input[type="checkbox"] {
+/* Prevent global input styles from breaking checkboxes */
+input[type="checkbox"] {
     width: auto;
-    height: auto;
-    margin-right: 6px;
+    padding: 0;
+    margin: 0;
+    transform: scale(1);
+}
+
+/* Checkbox layout */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Label styling */
+.checkbox-item label {
+    font-weight: normal;
 }
 
 fieldset label {
