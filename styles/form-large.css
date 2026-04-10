@@ -1,0 +1,54 @@
+@media screen and (min-width: 768px) {
+
+    main {
+        padding: 50px 20px;
+    }
+
+    form {
+        max-width: 750px;
+        padding: 30px;
+    }
+
+    /* Larger text */
+    body {
+        font-size: 16px;
+    }
+
+    /* Rating spacing */
+    .rating-container {
+        justify-content: space-around;
+    }
+
+    .rating-item span {
+        font-size: 18px;
+    }
+
+    /* Two-column layout */
+    .two-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    /* Features grid */
+    fieldset:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 20px;
+    }
+
+    fieldset:nth-of-type(2) span {
+        grid-column: span 2;
+    }
+
+    /* Button bigger */
+    input[type="submit"] {
+        font-size: 17px;
+        padding: 14px;
+    }
+
+    /* Slightly bigger card */
+    form {
+        border-radius: 14px;
+    }
+}
