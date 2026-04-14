@@ -108,7 +108,7 @@ const stories = [
     {
         title: "A Man Gone Wild",
         description: "Stay tuned!...",
-        image: "images/aman-gonewild.png"
+        image: "images/aman-gonewild.jpeg"
     },
     {
         title: "Death & Dragons; Dragons & Destruction",
