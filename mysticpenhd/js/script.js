@@ -105,11 +105,13 @@ const stories = [
         description: "An alien invasion threatens humanity, and hope lies in a mysterious experiment.",
         image: "images/silent-invasion.png"
     },
+    
     {
         title: "A Man Gone Wild",
         description: "Stay tuned!...",
         image: "images/aman-gonewild.jpeg"
     },
+
     {
         title: "Death & Dragons; Dragons & Destruction",
         description: "Stay tuned!...",
