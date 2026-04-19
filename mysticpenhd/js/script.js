@@ -162,6 +162,7 @@ function generateBreadcrumb() {
     if (path.includes("stories")) pageName = "Stories";
     else if (path.includes("characters")) pageName = "Characters";
     else if (path.includes("contact")) pageName = "Contact";
+    else if (path.includes("messaging")) pageName = "Messaging";
 
     breadcrumb.innerHTML = `
         <a href="index.html">Home</a> > <span>${pageName}</span>

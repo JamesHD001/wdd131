@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Henry Daniel James">
+    <title>MysticPenHD - Messaging</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+
+    <!-- Firebase (compat) - include if using Firebase backend. Add your project config in js/firebase-config.js -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js" defer></script>
+
+    <script src="js/messaging.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MysticPenHD</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="messaging.html" class="active">Messaging</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="breadcrumb">
+        <p id="breadcrumb"></p>
+    </nav>
+
+    <main>
+        <section class="messaging">
+            <h2>Reader Chat & Insights</h2>
+
+            <div class="chat-wrap">
+                <div class="auth-area">
+                    <button id="signinBtn" class="btn small">Sign in with Google</button>
+                    <button id="signoutBtn" class="btn small" style="display:none">Sign out</button>
+                    <span id="authStatus" class="auth-status">Not signed in</span>
+                </div>
+                <div id="messages" class="messages" aria-live="polite"></div>
+
+                <form id="chatForm" class="chat-form">
+                    <input id="nameInput" type="text" placeholder="Your display name" aria-label="Display name" required>
+                    <textarea id="messageInput" placeholder="Share your thoughts, favorite parts, or ask the author..." required></textarea>
+                    <div class="chat-actions">
+                        <label class="authorToggle"><input type="checkbox" id="asAuthor"> Post as Author</label>
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> MysticPenHD</p>
+        <a href="references.html">References</a>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "mysticpenhd-chat-server",
+  "version": "1.0.0",
+  "description": "Simple WebSocket server for MysticPenHD messaging",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "MysticPenHD",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.13.0"
+  }
+}
